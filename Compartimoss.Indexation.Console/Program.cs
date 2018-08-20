@@ -11,8 +11,8 @@ namespace Compartimoss.Indexation
     {
         static void Main(string[] args)
         {
-            string searchServiceName = "compartimossearch";
-            string adminApiKey = "05CFF3D15F3C1F6E09F99F8F919DB606";
+            string searchServiceName = "";
+            string adminApiKey = "";
             //Get data
             string text = System.IO.File.ReadAllText(@"../../../Data/dataOscars.json");
             List<AzureSearchModel> data = JsonConvert.DeserializeObject<List<AzureSearchModel>>(text);
